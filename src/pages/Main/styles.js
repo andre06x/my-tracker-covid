@@ -40,6 +40,10 @@ export const Escolha = styled.div`
         :hover{
             background-color: #ddd;
         }
+
+        svg{
+            color:#5740b3;
+        }
     }
     
 
