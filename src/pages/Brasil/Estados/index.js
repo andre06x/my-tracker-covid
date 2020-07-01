@@ -26,7 +26,7 @@ export default class Cidades extends Component{
     }
 
     render(){
-        const { loading, conteudo } = this.state
+        const { loading } = this.state
         return(
             <Container>
                 <Span>
