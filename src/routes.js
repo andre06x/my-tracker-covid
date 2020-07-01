@@ -7,7 +7,7 @@ import Mundo from './pages/Mundo'
 import Cidades from './pages/Brasil/Cidades'
 import Estados from './pages/Brasil/Estados'
 
-export default function Routes(){
+export default function Routes() {
     return(
         <BrowserRouter>
             <Switch>
