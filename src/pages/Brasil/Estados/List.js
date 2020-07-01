@@ -1,5 +1,4 @@
 import React from 'react'
-import { render } from '@testing-library/react'
 
 export function List({cases, state, deaths, }){
     let letalidade = 0;
