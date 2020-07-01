@@ -7,7 +7,8 @@ export default createGlobalStyle `
         outline: 0;
         box-sizing: border-box;
     }
-
+    
+    
     body{
         background-color:  #7159c1;
     }
