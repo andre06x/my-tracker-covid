@@ -33,6 +33,7 @@ export const ContainerTable = styled.div`
 `
 
 export const Table = styled.table`
+        max-height: 1000px;
         border: solid 1px #333;
         border-collapse: collapse;
         width:900px;

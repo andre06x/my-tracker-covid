@@ -17,7 +17,8 @@ export default class Cidades extends Component{
     state ={
         loading:true,
         content: '',
-        states : ['AC','AL', 'AP', 'AM', 'BA', 'CE', 'DF',  'ES',  'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS',  'RO',  'RR', 'SC', 'SE',  'TO',  'SP', ],
+        states: ['MG','SP', 'RS', 'RJ', 'BA', 'CE', 'DF',  'ES',  'GO', 'MA', 'MT', 'MS', 'AC', 'PA', 'PB', 'PR', 'PE', 'PI', 'AM', 'RN', 'AP',  'RO',  'RR', 'SC', 'SE',  'TO',  'AL'],
+        // states : ['AC','AL', 'AP', 'AM', 'BA', 'CE', 'DF',  'ES',  'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS',  'RO',  'RR', 'SC', 'SE',  'TO',  'SP', ],
         estado: '',
         loadingEstados: true,
         
