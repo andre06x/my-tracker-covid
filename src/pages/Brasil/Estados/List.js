@@ -21,7 +21,7 @@ export function Head(){
         <thead> 
             <tr>
                 <th>Estado</th>                                
-                <th>Casos</th>
+                <th>Casos Confirmados</th>
                 <th>Mortes</th>
                 <th>Letalidade</th>
             </tr>

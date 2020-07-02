@@ -6,7 +6,7 @@ import api from '../../../services/api/apiEstados'
 import { Container } from '../../../components/Container'
 import { Span } from '../../../components/Span'
 
-import { ContainerTable, Table } from './style'
+import { ContainerTable, Table } from '../../../components/Table/tableComponents'
 
 import { List, Head } from './List'
 
