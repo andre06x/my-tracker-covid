@@ -29,7 +29,7 @@ export default class Cidades extends Component{
             
                 try{
                     setTimeout( async ()=> {
-                        for(let j = 0; j < 5000; j++){}
+                        for(let j = 0; j < 6000; j++){}
                         let response = await axios.get(`https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=${this.state.states[i]}`, { timeout:15000})
                         await this.setState( { estado: this.state.states[i]})
                         // await console.log(this.state.estado)
@@ -44,7 +44,7 @@ export default class Cidades extends Component{
                             this.setState({ loadingEstados: false})
                         }
 
-                    },2000)
+                    },3000)
 
                 }catch(error){
                     alert('deu erro')
