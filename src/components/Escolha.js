@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Escolha = styled.div`
     padding:30px;
@@ -19,6 +19,6 @@ export const Escolha = styled.div`
             background-color: #ddd;
         }
     }
-    
 
-`
+
+`;

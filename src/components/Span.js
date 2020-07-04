@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Span = styled.span`
     margin:0%;
@@ -8,7 +8,7 @@ export const Span = styled.span`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     a{
         padding-bottom:25px;
         text-decoration:none;
@@ -18,4 +18,4 @@ export const Span = styled.span`
     h1{
         margin-top: 20px;
     }
-`
+`;

@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const api = axios.create({
-    baseURL: `https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RJ`
-})
+  baseURL: 'https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=RJ',
+});
 
 export default api;

@@ -1,0 +1,2 @@
+CRIAR UMA ROTA NOT FOUND   =>      https://reactrouter.com/web/example/no-match
+SE INSPIRAR  EM   http://covidangola.herokuapp.com/?fbclid=IwAR1t5ACQ_OeMJ2dCaENGKgP-M8lKlBeChqVq4CX4iT8UPuKWX471pMIehek

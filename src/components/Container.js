@@ -1,7 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
-
     max-width: 1000px;
     margin: 100px auto;
     padding: 20px 0px;
@@ -12,9 +11,9 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    
+
     h1{
         font-family: Arial, Helvetica, sans-serif;
         color: #5740b3;
     }
-`
+`;

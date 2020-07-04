@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Routes from './routes'
-import StylesGlobal from './styles/global'
+import Routes from './routes';
+import StylesGlobal from './styles/global';
 
 function App() {
   return (
     <>
-        <StylesGlobal />
-        <Routes />
+      <StylesGlobal />
+      <Routes />
     </>
   );
 }

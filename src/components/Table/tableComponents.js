@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components' 
+import styled, { keyframes } from 'styled-components';
 
-const rotate = keyframes `
+const rotate = keyframes`
     from{
         transform: rotate(0deg)
     }
@@ -8,13 +8,13 @@ const rotate = keyframes `
     to {
         transform: rotate(360deg)
     }
-`
+`;
 
 export const ContainerTable = styled.div`
     margin-top:20px;
     border:solid 1px #fff;
     max-width: 1000px;
-    
+
     svg{
         color: #5740b3;
         margin-right:10px;
@@ -30,7 +30,7 @@ export const ContainerTable = styled.div`
 
     }
 
-`
+`;
 
 export const Table = styled.table`
         max-height: 1000px;
@@ -40,7 +40,7 @@ export const Table = styled.table`
         font-family: Arial,Helvetica,sans-serif;
         color: rgb(87, 64, 179);
         font-size: 20px;
-        
+
         tr,th,td{
             border:solid 1px black;
             text-align:center;
@@ -49,4 +49,4 @@ export const Table = styled.table`
             padding: 5px;
         }
 
-`
+`;
