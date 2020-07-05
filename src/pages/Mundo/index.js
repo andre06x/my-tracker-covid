@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Span } from '../../components/Span'
-import { Container } from '../../components/Container'
+import { Container, Span } from '../../components/Container/All'
 
 export default class Mundo extends Component {
     state = {
