@@ -3,24 +3,28 @@ import { Link } from 'react-router-dom';
 import { FaSpinner } from 'react-icons/fa';
 import axios from 'axios';
 
-import { Container } from '../../../components/Container';
-import { Span } from '../../../components/Span';
-
+import { Container, Span } from '../../../components/Container/All';
 import { ContainerTable, Table } from '../../../components/Table/tableComponents';
 import { List, Head } from './List';
 
+
 export default class Cidades extends Component {
   state = {
-      loading:true,
+      loading: true,
       content: '',
       states: ['MG','SP', 'RS', 'RJ', 'BA', 'PR', 'DF',  'ES',  'GO', 'MA', 'MT', 'MS', 'AC', 'PA', 'PB', 'CE', 'PE', 'PI', 'AM', 'RN', 'AP',  'RO',  'RR', 'SC', 'SE',  'TO',  'AL'],
       // states : ['AC','AL', 'AP', 'AM', 'BA', 'CE', 'DF',  'ES',  'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS',  'RO',  'RR', 'SC', 'SE',  'TO',  'SP', ],
       estado: '',
       loadingEstados: true,
+      overflow:false
 
     }
 
   async componentDidMount() {
+
+    const header = new Headers();
+    header.append('Retry-After', '3600');
+
     for (let i = 0; i < this.state.states.length; i++) {
       try {
         // setTimeout( async ()=> {
@@ -32,7 +36,7 @@ export default class Cidades extends Component {
         // await console.log(this.state.estado)
 
         const { results } = response.data;
-        await this.setState({ content: [...this.state.content, results], loading: false });
+        await this.setState({ content: [...this.state.content, results], loading: false, overflow:true });
 
         await console.log(this.state.content);
 
@@ -66,7 +70,7 @@ export default class Cidades extends Component {
   }
 
   render() {
-    const { loading, content, loadingEstados } = this.state;
+    const { loading, content, loadingEstados, overflow } = this.state;
     return (
       <Container>
         <Span>
@@ -81,7 +85,7 @@ export default class Cidades extends Component {
           </h1>
         </Span>
 
-        <ContainerTable>
+        <ContainerTable overflow={overflow}>
           {loading ? (
             <FaSpinner size={50} />
           ) : (
