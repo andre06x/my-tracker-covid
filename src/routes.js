@@ -7,6 +7,8 @@ import Brasil from './pages/Brasil';
 import Mundo from './pages/Mundo';
 import Cidades from './pages/Brasil/Cidades';
 import Estados from './pages/Brasil/Estados';
+import NotFound from './pages/NotFound';
+import CidadesPorEstado from './pages/Brasil/CidadesporEstados'
 
 export default function Routes() {
   return (
@@ -26,6 +28,12 @@ export default function Routes() {
         </Route>
         <Route path="/mundo" exact>
           <Mundo />
+        </Route>
+        <Route path="/cidadesporestado" exact>
+          <CidadesPorEstado />
+        </Route>
+        <Route path="*" exact>
+          <NotFound />
         </Route>
       </Switch>
     </BrowserRouter>
