@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
-import axios from 'axios';
+import axios from 'axios'
 
 import { Container, Escolha, Span } from '../../components/Container/All';
 import { Conteudo } from './styles';
 import { ontemTeste, ontemDeOntem } from './datas';
-import  InfoCotainer  from './InfoCotainer';
+import  InfoContainer  from './InfoContainer';
 
 
 export default class Brasil extends Component {
@@ -20,7 +19,7 @@ export default class Brasil extends Component {
 
  async componentDidMount(){
 
-   const response = await axios.get(`https://api.covid19api.com/country/brazil?from=${ontemDeOntem}T00:00:00Z&to=${ontemTeste}T23:00:00Z`)
+   const response = await axios.get(`https://api.covid19api.com/country/brazil?from=${ontemDeOntem}T00:00:00Z&to=${ontemTeste}T00:00:00Z`)
   console.log(response)
   this.setState({
     brasil: [response.data[1]],
@@ -53,7 +52,7 @@ export default class Brasil extends Component {
           <h1>Brasil</h1>
         </Span>
         <Conteudo go>
-          {brasil.map( brasill => <InfoCotainer go ={go} {...brasill} key={brasill} confirmed24={confirmed24} deaths24={deaths24} recovered24={recovered24} />)}
+          {brasil.map( brasill => <InfoContainer go ={go} {...brasill} key={brasill} confirmed24={confirmed24} deaths24={deaths24} recovered24={recovered24} />)}
         </Conteudo>
         <Escolha>
         <Link
