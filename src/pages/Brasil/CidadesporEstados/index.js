@@ -12,7 +12,7 @@ export default class CidadesPorEstado extends Component {
     estados: ['MG','SP', 'RS', 'RJ', 'BA', 'PR', 'DF',  'ES',  'GO', 'MA', 'MT', 'MS', 'AC', 'PA', 'PB', 'CE', 'PE', 'PI', 'AM', 'RN', 'AP',  'RO',  'RR', 'SC', 'SE',  'TO',  'AL'],
     estado: '',
     overflow: false,
-    secureMap: true,
+    loading: true,
     first: true,
     nonClick: false,
   }
@@ -20,14 +20,19 @@ export default class CidadesPorEstado extends Component {
 
  chamar = async estado => {
 
-   this.setState( { first: false, nonClick: true, click: estado, })
+  this.setState({
+    first: false,
+    nonClick: true,
+    click: estado,
+    estados: this.state.estados.filter(estados => estados !== estado)
+  })
+
   const response = await  axios.get(`https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=${estado}`)
-  console.log( response.data)
   const { results } = response.data
   this.setState( {
     estado: [results, ...this.state.estado],
     overflow: true,
-    secureMap: false,
+    loading: false,
     nonClick: false,
   })
 
@@ -37,7 +42,7 @@ export default class CidadesPorEstado extends Component {
     const {
       estados,
       overflow,
-      secureMap,
+      loading,
       estado,
       first,
       nonClick,
@@ -45,25 +50,26 @@ export default class CidadesPorEstado extends Component {
     } = this.state;
 
     return (
-      <Container first={first}>
+      <Container first={first} loading={loading}>
         <Span>
           <Link
-            to="/"
+            to="/brasil"
           >
-            Voltar a pagina Principal
+           Voltar a seleção
           </Link>
         </Span>
           <h1>
             Cidades por Estado
           </h1>
-          <Estados nonClick={nonClick} >
-            {estados.map( estado => <div className={estado}  onClick={() => this.chamar(estado)} key={estado}>{estado}</div>)}
+          <Estados
+            nonClick={nonClick} >
+            {estados.map( estado => <div  onClick={() => this.chamar(estado)} key={estado}>{estado}</div>)}
           </Estados>
-          { secureMap ? (
+          { loading ? (
               <FaSpinner size={30} />
           ) : (
                 <ContainerTable overflow={overflow}>
-            { secureMap ? (
+            { loading ? (
               ''
             ) : (
                   <Table border="1" >
