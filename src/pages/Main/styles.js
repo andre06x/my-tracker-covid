@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled,{ css, keyframes } from 'styled-components'
 
 
 export const Container = styled.div`
@@ -45,6 +45,47 @@ export const Escolha = styled.div`
             color:#5740b3;
         }
     }
+
+
+`
+
+const rotate = keyframes `
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+`
+
+
+export const Dados = styled.div`
+    display: flex;
+
+    div{
+
+        background-color:#eee;
+        padding: 10px;
+        margin:-20px 30px 0px 40px;
+        ul {
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #5740b3;
+      }
+
+        li{
+            font-size:14px;
+            text-align: center;
+        }
+    }
+
+    ${props => props.loadingImportant && css`
+    svg{
+        margin-top:30px;
+        color:#5740b3;
+        animation: ${rotate} linear 2s infinite
+    }
+    `}
 
 
 `
