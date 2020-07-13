@@ -22,12 +22,14 @@ export const ContainerTable = styled.div`
     ${props => props.overflow && css`
          overflow: scroll;
          border-top:solid 6px #eee;
+         border-left: solid 6px #eee;
 
     `}
 
     svg{
         color: #5740b3;
         margin-right:10px;
+        margin-left: 10px;
         animation: ${rotate} linear 2s infinite;
     }
 
