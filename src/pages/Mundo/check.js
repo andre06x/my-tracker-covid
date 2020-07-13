@@ -1,0 +1,754 @@
+export const traduzir = [
+	{
+		"country":"Australia",
+		"traduzido":"Austrália"
+	},
+	{
+		"country":"Austria",
+		"traduzido":"Áustria"
+	},
+	{
+		"country":"Canada",
+		"traduzido":"Canadá"
+	},
+	{
+		"country":"China",
+		"traduzido":"China"
+	},
+	{
+		"country":"Denmark",
+		"traduzido":"Dinamarca"
+	},
+	{
+		"country":"Finland",
+		"traduzido":"Finlândia"
+	},
+	{
+		"country":"France",
+		"traduzido":"França"
+	},
+	{
+		"country":"Germany",
+		"traduzido":"Alemanha"
+	},
+	{
+		"country":"Iceland",
+		"traduzido":"Islândia"
+	},
+	{
+		"country":"Ireland",
+		"traduzido":"Irlanda"
+	},
+	{
+		"country":"Italy",
+		"traduzido":"Itália"
+	},
+	{
+		"country":"Netherlands",
+		"traduzido":"Países Baixos"
+	},
+	{
+		"country":"Norway",
+		"traduzido":"Noruega"
+	},
+	{
+		"country":"Russia",
+		"traduzido":"Rússia"
+	},
+	{
+		"country":"Sweden",
+		"traduzido":"Suécia"
+	},
+	{
+		"country":"Switzerland",
+		"traduzido":"Suíça"
+	},
+	{
+		"country":"United Kingdom",
+		"traduzido":"Reino Unido"
+	},
+	{
+		"country":"US",
+		"traduzido":"Estados Unidos"
+	},
+	{
+		"country":"Spain",
+		"traduzido":"Espanha"
+	},
+	{
+		"country":"Mexico",
+		"traduzido":"México"
+	},
+	{
+		"country":"Chile",
+		"traduzido":"Chile"
+	},
+	{
+		"country":"Brazil",
+		"traduzido":"Brasil"
+	},
+	{
+		"country":"Peru",
+		"traduzido":"Peru"
+	},
+	{
+		"country":"Colombia",
+		"traduzido":"Colômbia"
+	},
+	{
+		"country":"Japan",
+		"traduzido":"Japão"
+	},
+	{
+		"country":"Ukraine",
+		"traduzido":"Ucrânia"
+	},
+	{
+		"country":"India",
+		"traduzido":"Índia"
+	},
+	{
+		"country":"Pakistan",
+		"traduzido":"Paquistão"
+	},
+	{
+		"country":"Afghanistan",
+		"traduzido":"Afeganistão"
+	},
+	{
+		"country":"Albania",
+		"traduzido":"Albânia"
+	},
+	{
+		"country":"Algeria",
+		"traduzido":"Argélia"
+	},
+	{
+		"country":"Andorra",
+		"traduzido":"Andorra"
+	},
+	{
+		"country":"Angola",
+		"traduzido":"Angola"
+	},
+	{
+		"country":"Antigua and Barbuda",
+		"traduzido":"Antígua e Barbuda"
+	},
+	{
+		"country":"Argentina",
+		"traduzido":"Argentina"
+	},
+	{
+		"country":"Armenia",
+		"traduzido":"Armênia"
+	},
+	{
+		"country":"Azerbaijan",
+		"traduzido":"Azerbaijão"
+	},
+	{
+		"country":"Bahamas",
+		"traduzido":"Bahamas"
+	},
+	{
+		"country":"Bahrain",
+		"traduzido":"Bahrein"
+	},
+	{
+		"country":"Bangladesh",
+		"traduzido":"Bangladesh"
+	},
+	{
+		"country":"Barbados",
+		"traduzido":"Barbados"
+	},
+	{
+		"country":"Belarus",
+		"traduzido":"Biolorrússia"
+	},
+	{
+		"country":"Belgium",
+		"traduzido":"Bélgica"
+	},
+	{
+		"country":"Belize",
+		"traduzido":"Belize"
+	},
+	{
+		"country":"Benin",
+		"traduzido":"Benin"
+	},
+	{
+		"country":"Bhutan",
+		"traduzido":"Butão"
+	},
+	{
+		"country":"Bolivia",
+		"traduzido":"Bolívia"
+	},
+	{
+		"country":"Bosnia and Herzegovina",
+		"traduzido":"Bósnia e Herzegovina"
+	},
+	{
+		"country":"Botswana",
+		"traduzido":"Botsuana"
+	},
+	{
+		"country":"Brunei",
+		"traduzido":"Brunei"
+	},
+	{
+		"country":"Bulgaria",
+		"traduzido":"Bulgária"
+	},
+	{
+		"country":"Burkina Faso",
+		"traduzido":"Burkina Faso"
+	},
+	{
+		"country":"Burma",
+		"traduzido":"Myanmar"
+	},
+	{
+		"country":"Burundi",
+		"traduzido":"Burundi"
+	},
+	{
+		"country":"Cabo Verde",
+		"traduzido":"Cabo Verde"
+	},
+	{
+		"country":"Cambodia",
+		"traduzido":"Cambodja"
+	},
+	{
+		"country":"Cameroon",
+		"traduzido":"Camarões"
+	},
+	{
+		"country":"Central African Republic",
+		"traduzido":"República Centro-Africana"
+	},
+	{
+		"country":"Chad",
+		"traduzido":"Chade"
+	},
+	{
+		"country":"Comoros",
+		"traduzido":"Comores"
+	},
+	{
+		"country":"Congo (Brazzaville)",
+		"traduzido":"Congo (Brazzaville)"
+	},
+	{
+		"country":"Congo (Kinshasa)",
+		"traduzido":"Congo (Kinshasa)"
+	},
+	{
+		"country":"Costa Rica",
+		"traduzido":"Costa Rica"
+	},
+	{
+		"country":"Cote d'Ivoire",
+		"traduzido":"Costa do Marfim"
+	},
+	{
+		"country":"Croatia",
+		"traduzido":"Croácia"
+	},
+	{
+		"country":"Cuba",
+		"traduzido":"Cuba"
+	},
+	{
+		"country":"Cyprus",
+		"traduzido":"Chipre"
+	},
+	{
+		"country":"Czechia",
+		"traduzido":"República Tcheca"
+	},
+	{
+		"country":"Diamond Princess",
+		"traduzido":"Cruzeiro Diamond Princess"
+	},
+	{
+		"country":"Djibouti",
+		"traduzido":"Djibouti"
+	},
+	{
+		"country":"Dominica",
+		"traduzido":"Dominica"
+	},
+	{
+		"country":"Dominican Republic",
+		"traduzido":"República Dominicana"
+	},
+	{
+		"country":"Ecuador",
+		"traduzido":"Equador"
+	},
+	{
+		"country":"Egypt",
+		"traduzido":"Egito"
+	},
+	{
+		"country":"El Salvador",
+		"traduzido":"El Salvador"
+	},
+	{
+		"country":"Equatorial Guinea",
+		"traduzido":"Guiné Equatorial"
+	},
+	{
+		"country":"Eritrea",
+		"traduzido":"Eritreia"
+	},
+	{
+		"country":"Estonia",
+		"traduzido":"Estônia"
+	},
+	{
+		"country":"Eswatini",
+		"traduzido":"Essuatíni"
+	},
+	{
+		"country":"Ethiopia",
+		"traduzido":"Etiópia"
+	},
+	{
+		"country":"Fiji",
+		"traduzido":"Fiji"
+	},
+	{
+		"country":"Gabon",
+		"traduzido":"Gabão"
+	},
+	{
+		"country":"Gambia",
+		"traduzido":"Gâmbia"
+	},
+	{
+		"country":"Georgia",
+		"traduzido":"Geórgia"
+	},
+	{
+		"country":"Ghana",
+		"traduzido":"Gana"
+	},
+	{
+		"country":"Greece",
+		"traduzido":"Grécia"
+	},
+	{
+		"country":"Grenada",
+		"traduzido":"Granada"
+	},
+	{
+		"country":"Guatemala",
+		"traduzido":"Guatemala"
+	},
+	{
+		"country":"Guinea",
+		"traduzido":"Guiné"
+	},
+	{
+		"country":"Guinea-Bissau",
+		"traduzido":"Guiné-Bissau"
+	},
+	{
+		"country":"Guyana",
+		"traduzido":"Guiana"
+	},
+	{
+		"country":"Haiti",
+		"traduzido":"Haiti"
+	},
+	{
+		"country":"Holy See",
+		"traduzido":"Jurisdição Santa Sé"
+	},
+	{
+		"country":"Honduras",
+		"traduzido":"Honduras"
+	},
+	{
+		"country":"Hungary",
+		"traduzido":"Hungria"
+	},
+	{
+		"country":"Indonesia",
+		"traduzido":"Indonésia"
+	},
+	{
+		"country":"Iran",
+		"traduzido":"Irã"
+	},
+	{
+		"country":"Iraq",
+		"traduzido":"Iraque"
+	},
+	{
+		"country":"Israel",
+		"traduzido":"Israel"
+	},
+	{
+		"country":"Jamaica",
+		"traduzido":"Jamaica"
+	},
+	{
+		"country":"Jordan",
+		"traduzido":"Jordânia"
+	},
+	{
+		"country":"Kazakhstan",
+		"traduzido":"Cazaquistão"
+	},
+	{
+		"country":"Kenya",
+		"traduzido":"Quénia"
+	},
+	{
+		"country":"Korea, South",
+		"traduzido":"Coreia do Sul"
+	},
+	{
+		"country":"Kosovo",
+		"traduzido":"Kosovo"
+	},
+	{
+		"country":"Kuwait",
+		"traduzido":"Kuwait"
+	},
+	{
+		"country":"Kyrgyzstan",
+		"traduzido":"Quirguistão"
+	},
+	{
+		"country":"Laos",
+		"traduzido":"Laos"
+	},
+	{
+		"country":"Latvia",
+		"traduzido":"Latvia"
+	},
+	{
+		"country":"Lebanon",
+		"traduzido":"Líbano"
+	},
+	{
+		"country":"Lesotho",
+		"traduzido":"Lesoto"
+	},
+	{
+		"country":"Liberia",
+		"traduzido":"Libéria"
+	},
+	{
+		"country":"Libya",
+		"traduzido":"Líbia"
+	},
+	{
+		"country":"Liechtenstein",
+		"traduzido":"Liechtenstein"
+	},
+	{
+		"country":"Lithuania",
+		"traduzido":"Lituânia"
+	},
+	{
+		"country":"Luxembourg",
+		"traduzido":"Luxemburgo"
+	},
+	{
+		"country":"MS Zaandam",
+		"traduzido":"Cruzeiro MS Zaandam"
+	},
+	{
+		"country":"Madagascar",
+		"traduzido":"Madagáscar"
+	},
+	{
+		"country":"Malawi",
+		"traduzido":"Malawi"
+	},
+	{
+		"country":"Malaysia",
+		"traduzido":"Malásia"
+	},
+	{
+		"country":"Maldives",
+		"traduzido":"Maldivas"
+	},
+	{
+		"country":"Mali",
+		"traduzido":"Mali"
+	},
+	{
+		"country":"Malta",
+		"traduzido":"Malta"
+	},
+	{
+		"country":"Mauritania",
+		"traduzido":"Mauritânia"
+	},
+	{
+		"country":"Mauritius",
+		"traduzido":"Ilhas Maurício"
+	},
+	{
+		"country":"Moldova",
+		"traduzido":"Moldávia"
+	},
+	{
+		"country":"Monaco",
+		"traduzido":"Mônaco"
+	},
+	{
+		"country":"Mongolia",
+		"traduzido":"Mongólia"
+	},
+	{
+		"country":"Montenegro",
+		"traduzido":"Montenegro"
+	},
+	{
+		"country":"Morocco",
+		"traduzido":"Marrocos"
+	},
+	{
+		"country":"Mozambique",
+		"traduzido":"Moçambique"
+	},
+	{
+		"country":"Namibia",
+		"traduzido":"Namíbia"
+	},
+	{
+		"country":"Nepal",
+		"traduzido":"Nepal"
+	},
+	{
+		"country":"New Zealand",
+		"traduzido":"Nova Zelândia"
+	},
+	{
+		"country":"Nicaragua",
+		"traduzido":"Nicarágua"
+	},
+	{
+		"country":"Niger",
+		"traduzido":"Níger"
+	},
+	{
+		"country":"Nigeria",
+		"traduzido":"Nigéria"
+	},
+	{
+		"country":"North Macedonia",
+		"traduzido":"Macedônia (ARJM)"
+	},
+	{
+		"country":"Oman",
+		"traduzido":"Omã"
+	},
+	{
+		"country":"Panama",
+		"traduzido":"Panamá"
+	},
+	{
+		"country":"Papua New Guinea",
+		"traduzido":"Papua-Nova Guiné"
+	},
+	{
+		"country":"Paraguay",
+		"traduzido":"Paraguai"
+	},
+	{
+		"country":"Philippines",
+		"traduzido":"Filipinas"
+	},
+	{
+		"country":"Poland",
+		"traduzido":"Polônia"
+	},
+	{
+		"country":"Portugal",
+		"traduzido":"Portugal"
+	},
+	{
+		"country":"Qatar",
+		"traduzido":"Catar"
+	},
+	{
+		"country":"Romania",
+		"traduzido":"Romênia"
+	},
+	{
+		"country":"Rwanda",
+		"traduzido":"Ruanda"
+	},
+	{
+		"country":"Saint Kitts and Nevis",
+		"traduzido":"São Cristóvão e Névis"
+	},
+	{
+		"country":"Saint Lucia",
+		"traduzido":"Santa Lúcia"
+	},
+	{
+		"country":"Saint Vincent and the Grenadines",
+		"traduzido":"São Vicente e Granadinas"
+	},
+	{
+		"country":"San Marino",
+		"traduzido":"San Marino"
+	},
+	{
+		"country":"Sao Tome and Principe",
+		"traduzido":"São Tomé e Príncipe"
+	},
+	{
+		"country":"Saudi Arabia",
+		"traduzido":"Arábia Saudita"
+	},
+	{
+		"country":"Senegal",
+		"traduzido":"Senegal"
+	},
+	{
+		"country":"Serbia",
+		"traduzido":"Sérvia"
+	},
+	{
+		"country":"Seychelles",
+		"traduzido":"Seicheles"
+	},
+	{
+		"country":"Sierra Leone",
+		"traduzido":"Serra Leoa"
+	},
+	{
+		"country":"Singapore",
+		"traduzido":"Singapura"
+	},
+	{
+		"country":"Slovakia",
+		"traduzido":"Eslováquia"
+	},
+	{
+		"country":"Slovenia",
+		"traduzido":"Eslovênia"
+	},
+	{
+		"country":"Somalia",
+		"traduzido":"Somália"
+	},
+	{
+		"country":"South Africa",
+		"traduzido":"África do Sul"
+	},
+	{
+		"country":"South Sudan",
+		"traduzido":"Sudão do Sul"
+	},
+	{
+		"country":"Sri Lanka",
+		"traduzido":"Sri Lanka"
+	},
+	{
+		"country":"Sudan",
+		"traduzido":"Sudão"
+	},
+	{
+		"country":"Suriname",
+		"traduzido":"Suriname"
+	},
+	{
+		"country":"Syria",
+		"traduzido":"Síria"
+	},
+	{
+		"country":"Taiwan*",
+		"traduzido":"Taiwan"
+	},
+	{
+		"country":"Tajikistan",
+		"traduzido":"Tajiquistão"
+	},
+	{
+		"country":"Tanzania",
+		"traduzido":"Tanzânia"
+	},
+	{
+		"country":"Thailand",
+		"traduzido":"Tailândia"
+	},
+	{
+		"country":"Timor-Leste",
+		"traduzido":"Timor-Leste"
+	},
+	{
+		"country":"Togo",
+		"traduzido":"Togo"
+	},
+	{
+		"country":"Trinidad and Tobago",
+		"traduzido":"Trindade e Tobago"
+	},
+	{
+		"country":"Tunisia",
+		"traduzido":"Tunísia"
+	},
+	{
+		"country":"Turkey",
+		"traduzido":"Turquia"
+	},
+	{
+		"country":"Uganda",
+		"traduzido":"Uganda"
+	},
+	{
+		"country":"United Arab Emirates",
+		"traduzido":"Emirados Árabes Unidos"
+	},
+	{
+		"country":"Uruguay",
+		"traduzido":"Uruguai"
+	},
+	{
+		"country":"Uzbekistan",
+		"traduzido":"Uzbequistão"
+	},
+	{
+		"country":"Venezuela",
+		"traduzido":"Venezuela"
+	},
+	{
+		"country":"Vietnam",
+		"traduzido":"Vietnã"
+	},
+	{
+		"country":"West Bank and Gaza",
+		"traduzido":"Territórios palestinianos"
+	},
+	{
+		"country":"Western Sahara",
+		"traduzido":"Saara Ocidental"
+	},
+	{
+		"country":"Yemen",
+		"traduzido":"Iêmen"
+	},
+	{
+		"country":"Zambia",
+		"traduzido":"Zâmbia"
+	},
+	{
+		"country":"Zimbabwe",
+		"traduzido":"Zimbábue"
+	}
+]
