@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsExclamationCircleFill } from 'react-icons/bs';
-import { Container } from '../../components/Container';
+import { Container } from '../../components/Container/All';
 import { Title, Span } from './style';
 
 export default function NotFound() {
