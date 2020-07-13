@@ -11,8 +11,8 @@ const rotate = keyframes`
 
 export const Container = styled.div`
     max-width: 1000px;
-    margin: 100px auto;
-    padding: 50px;
+    margin: 50px auto;
+    padding: 20px 20px 40px 20px ;
     border-radius: 4px;
     background-color:#fff;
     display: flex;
@@ -32,12 +32,16 @@ export const Container = styled.div`
         display:flex;
         align-items:center;
     }
-
+    ${props => props.loading && css`
     svg{
         margin-top:30px;
         color:#5740b3;
         animation: ${rotate} linear 2s infinite
     }
+    `}
+
+
+
 `;
 
 
@@ -46,7 +50,8 @@ export const Escolha = styled.div`
     display:flex;
 
     a {
-       padding: 20px 50px;
+        align-items: center;
+       padding: 15px 50px;
        border: solid 1px #eee;
        background-color: #eee;
        margin: 0 20px;
@@ -66,8 +71,7 @@ export const Escolha = styled.div`
 
 
 export const Span = styled.span`
-    margin:0%;
-    padding:10px;
+    margin-top:10px;
 
     display: flex;
     flex-direction: column;
@@ -76,12 +80,12 @@ export const Span = styled.span`
 
     a{
         font-size:20px;
-        padding-bottom:25px;
+        padding-bottom:10px;
         text-decoration:none;
         color:#5740b3;
     }
 
     h1{
-        margin-top: 20px;
+        margin: 20px 0;
     }
 `;
