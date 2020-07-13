@@ -15,12 +15,16 @@ export default class Cidades extends Component {
         conteudo: '',
         overflow: false
     }
+
   async componentDidMount() {
     const response = await api.get();
     const { data } = response.data;
 
-    this.setState({ loading: false, conteudo: data, overflow:true });
-    console.log(this.state.conteudo);
+    this.setState({
+      loading: false,
+      conteudo: data,
+      overflow:true
+    });
   }
 
   render() {

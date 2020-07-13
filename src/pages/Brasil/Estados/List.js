@@ -28,6 +28,5 @@ export function List({ cases, state, deaths }) {
         %
       </td>
     </tr>
-  // <h1>{state + "   "  + cases + "   "  + deaths}</h1>
   );
 }
