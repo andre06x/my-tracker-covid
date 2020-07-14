@@ -26,16 +26,16 @@ export default class Mundo extends Component {
     async componentDidMount(){
 
         var hoje = new Date();
-        var hora = hoje.getHours() + 3;
+        var hora = hoje.getHours()
         if(hora <= 10){
             hora = '0'+hora;
         }
         if(hora >= 23){
-            hora = hora - 3
+            hora = hora - 2
         }
 
 
-        const response = await axios.get(`https://api.covid19api.com/world?from=${ontemTeste}T${hora}:00:00Z&to=${hojeData}T${hora}:00:00Z`)
+        const response = await axios.get(`https://api.covid19api.com/world?from=${ontemTeste}T${hora}:00:00Z&to=${hojeData}T00:00:00Z`)
         console.log(response)
         const  { data }  = response
         this.setState({
