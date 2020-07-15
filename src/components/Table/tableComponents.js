@@ -93,7 +93,7 @@ export const Table = styled.table`
         }
 
         @media (max-width: 600px){
-            font-size: 0.6em;
+            font-size: 0.7em;
             overflow:scroll;
             max-width: 100px;
         }
