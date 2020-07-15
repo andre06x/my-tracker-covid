@@ -11,7 +11,7 @@ import { Container, Span } from '../../components/Container/All'
 import  InfoContainer  from './InfoContainer'
 import { Head, ListTable } from './Table'
 import { Conteudo } from '../Brasil/styles'
-import { ontemTeste, hojeData, ontemDeOntem } from '../Brasil/datas'
+import { ontemTeste, hojeData } from '../Brasil/datas'
 
 
 export default class Mundo extends Component {
@@ -34,9 +34,7 @@ export default class Mundo extends Component {
             hora = hora - 2
         }
 
-
         const response = await axios.get(`https://api.covid19api.com/world?from=${ontemTeste}T${hora}:00:00Z&to=${hojeData}T${hora}:00:00Z`)
-        console.log(response)
         const  { data }  = response
         this.setState({
             conteudo: [ data[data.length - 1] ],
