@@ -41,6 +41,10 @@ export const Container = styled.div`
     `}
 
 
+    @media(max-width: 600px){
+        max-width:600px;
+        overflow: scroll;
+    }
 
 `;
 
