@@ -92,4 +92,10 @@ export const Table = styled.table`
             padding-bottom: 3px;
         }
 
+        @media (max-width: 600px){
+            font-size: 0.8em;
+            overflow:scroll;
+            max-width: 100px;
+        }
+
 `;
