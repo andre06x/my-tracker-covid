@@ -15,6 +15,7 @@ export default class CidadesPorEstado extends Component {
     loading: true,
     first: true,
     nonClick: false,
+    sizeTable: true,
   }
 
 
@@ -46,7 +47,7 @@ export default class CidadesPorEstado extends Component {
       estado,
       first,
       nonClick,
-
+      sizeTable
     } = this.state;
 
     return (
@@ -72,7 +73,7 @@ export default class CidadesPorEstado extends Component {
             { loading ? (
               ''
             ) : (
-                  <Table border="1" >
+                  <Table border="1" sizeTable ={sizeTable}>
                     <Head />
                     <tbody>
                       { estado.map( (estad) => estad.map( est => est.city !== null && <List key={String(est.city)} {...est} />))}
