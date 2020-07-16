@@ -70,7 +70,10 @@ export const Escolha = styled.div`
         }
 
         @media(max-width:600px){
-            padding: 5px 25px;
+            padding: 15px 35px;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
         }
     }
 
