@@ -96,6 +96,11 @@ export const Table = styled.table`
             font-size: 0.7em;
             overflow:scroll;
             max-width: 100px;
+            ${props => props.sizeTable && css`
+                font-size: 0.6em;
+            `}
         }
+
+
 
 `;
