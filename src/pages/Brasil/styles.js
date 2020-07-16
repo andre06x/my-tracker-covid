@@ -20,10 +20,15 @@ export const Conteudo = styled.div`
         margin-left: 40px;
         padding: 90px 30px;
         margin-top:3px;
-        /* background-color:black; */
-        /* border: solid 2px #5740b3; */
         background-color: rgb(133,98,2226,1);
         border-radius:10px;
+
+        @media(max-width: 600px){
+            padding: 40px 30px;
+            font-size: 1em;
+            margin-top:9px;
+
+        }
 
         svg{
             animation: ${rotate} linear 2s infinite;
