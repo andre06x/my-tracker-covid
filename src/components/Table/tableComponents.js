@@ -99,6 +99,10 @@ export const Table = styled.table`
             ${props => props.sizeTable && css`
                 font-size: 0.66em;
             `}
+
+            ${props => props.sizeTable === 2 && css`
+                font-size: 1.111em;
+            `}
         }
 
 
