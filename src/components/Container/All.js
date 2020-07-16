@@ -68,6 +68,10 @@ export const Escolha = styled.div`
         :hover{
             background-color: #ddd;
         }
+
+        @media(max-width:600px){
+            padding: 5px 25px;
+        }
     }
 
 
