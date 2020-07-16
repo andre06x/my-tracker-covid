@@ -13,7 +13,8 @@ export default class Cidades extends Component {
     state ={
         loading:true,
         conteudo: '',
-        overflow: false
+        overflow: false,
+        sizeTable: 2,
     }
 
   async componentDidMount() {
@@ -28,7 +29,7 @@ export default class Cidades extends Component {
   }
 
   render() {
-    const { loading, overflow } = this.state;
+    const { loading, overflow, sizeTable } = this.state;
     return (
       <Container>
         <Span>
@@ -45,7 +46,7 @@ export default class Cidades extends Component {
           {loading ? (
             <FaSpinner size={50} />
           ) : (
-            <Table border="1" >
+            <Table border="1" sizeTable={sizeTable}>
               <Head />
               <tbody>
                 {this.state.conteudo.map((c) => <List key={String(c.uid)} {...c} />)}
