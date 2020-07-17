@@ -20,7 +20,7 @@ export default class Mundo extends Component {
         loading: true,
         conteudo: [],
         go: true,
-        contries: ['']
+        countries: ['']
     }
 
     async componentDidMount(){
@@ -41,12 +41,12 @@ export default class Mundo extends Component {
 
         })
 
-        const responseContries = await apiMundo()
+        const responseCountries = await apiMundo()
 
-        const dataContries = responseContries.data.data
+        const dataCountries = responseCountries.data.data
 
         this.setState({
-            contries: dataContries,
+            countries: dataCountries,
             overflow: true,
             loading: false,
             go: false,
@@ -55,7 +55,7 @@ export default class Mundo extends Component {
     }
 
     render(){
-        const { overflow, loading, conteudo,go, contries  } = this.state
+        const { overflow, loading, conteudo,go, countries  } = this.state
         return(
             <Container>
                 <Span>
@@ -77,7 +77,7 @@ export default class Mundo extends Component {
                         <Table border="1" >
                         <Head />
                         <tbody>
-                            {contries.map((c) => <ListTable  key={String(c.country)}{...c} />)}
+                            {countries.map((c) => <ListTable  key={String(c.country)}{...c} />)}
                         </tbody>
                         </Table>
 
