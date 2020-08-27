@@ -5,7 +5,7 @@ import { Container, Span } from '../../../components/Container/All';
 import { Estados } from './styles';
 import { ContainerTable, Table } from '../../../components/Table/tableComponents';
 import { FaSpinner } from 'react-icons/fa';
-import { List, Head } from '../Cidades/List'
+import { List, Head } from './List'
 
 export default class CidadesPorEstado extends Component {
   state = {
