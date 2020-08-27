@@ -20,9 +20,6 @@ export default function Routes() {
         <Route path="/brasil" exact>
           <Brasil />
         </Route>
-        <Route path="/brasil/cidades" exact>
-          <Cidades />
-        </Route>
         <Route path="/brasil/estados" exact>
           <Estados />
         </Route>
