@@ -5,7 +5,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Main from './pages/Main';
 import Brasil from './pages/Brasil';
 import Mundo from './pages/Mundo';
-import Cidades from './pages/Brasil/Cidades';
 import Estados from './pages/Brasil/Estados';
 import NotFound from './pages/NotFound';
 import CidadesPorEstado from './pages/Brasil/CidadesporEstados'
