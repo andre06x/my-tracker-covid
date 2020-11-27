@@ -1,5 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    My Tracker Covid :earth_americas: 
+</h1>
 
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=7159c1&labelColor=000000" alt="PRs welcome!" />
+
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=7159c1&labelColor=000000">
+</p>
+
+![myTrackerCovid](https://user-images.githubusercontent.com/67429807/96278200-9ba46a80-0fab-11eb-91f0-439b09e5bc9c.png)
+
+
+<h1 id="tecnologias"> 🚀 Tecnologias</h1>
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [React](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
+- [API BrasilDados24h](https://api.covid19api.com/country/brazil?)
+- [API CidadesBrasil](https://github.com/turicas/covid19-br)
+- [API EstadosBrasil](https://covid19-brazil-api.now.sh/api/report/v1)
+- [API Mundo24h](https://documenter.getpostman.com/view/10808728/SzS8rjbc#e831c268-9da1-4d86-8b5a-8d7f61910af8)
+- [API MundoPaises](https://covid19-brazil-api.now.sh/api/report/v1/countries)
+
+## 💻 Projeto
+
+My Tracker Covid é uma aplicação desenvolvida em meio a pandemia do COVID-19, com ele temos os dados de cidades, estados, países e atualizaçõe a cada 24h. Meu intuito ao crialo foi ter em um local com todos os possíveis dados de todos os lugares. 
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
+<br><br>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
 In the project directory, you can run:
