@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Container, Span } from '../../../components/Container/All';
 import { Estados } from './styles';
 import { ContainerTable, Table } from '../../../components/Table/tableComponents';
 import { FaSpinner } from 'react-icons/fa';
-import { List, Head } from './List'
+import { List, Head } from './List';
+
+const token = '3bd7b29a7cebed90c2daa903135394ad75f4a9a2';
 
 export default class CidadesPorEstado extends Component {
   state = {
@@ -16,7 +18,7 @@ export default class CidadesPorEstado extends Component {
     first: true,
     nonClick: false,
     sizeTable: true,
-  }
+  };
 
 
  chamar = async estado => {
@@ -28,7 +30,9 @@ export default class CidadesPorEstado extends Component {
     estados: this.state.estados.filter(estados => estados !== estado)
   })
 
-  const response = await  axios.get(`https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=${estado}`)
+  const response = await  axios.get(`https://api.brasil.io/v1/dataset/covid19/caso/data?is_last=True&state=${estado}`,
+    { headers: { 'Authorization': `Token ${token}` }});
+
   const { results } = response.data
   this.setState( {
     estado: [results, ...this.state.estado],
