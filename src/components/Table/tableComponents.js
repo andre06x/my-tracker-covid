@@ -91,11 +91,19 @@ export const Table = styled.table`
             border-right: solid 1px #ccc;
             padding-bottom: 3px;
         }
+        a {
+          text-decoration: none;
+
+          &:hover {
+            border-bottom: solid 1px blue;
+          }
+        }
 
         @media (max-width: 600px){
             font-size: 0.7em;
             overflow:scroll;
             max-width: 100px;
+
             ${props => props.sizeTable && css`
                 font-size: 0.66em;
             `}
