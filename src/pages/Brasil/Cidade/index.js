@@ -27,6 +27,7 @@ const City = () => {
     };
 
     request();
+       // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   return(
