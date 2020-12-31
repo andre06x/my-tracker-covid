@@ -24,9 +24,6 @@ export function List({
   let letalidade = 0;
   letalidade = (deaths / confirmed) * 100;
 
-  function a(city){
-
-  }
   return (
 
     <tr>
