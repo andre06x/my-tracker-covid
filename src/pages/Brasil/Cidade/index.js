@@ -17,7 +17,7 @@ const City = () => {
     const { city } = params;
 
     useEffect( () =>{
-      async function amor(){
+      async function request(){
 
         const response = await axios.get(`https://api.brasil.io/v1/dataset/covid19/caso/data/?city=${city}`,
         { headers: { 'Authorization': `Token ${token}` }});
@@ -26,8 +26,8 @@ const City = () => {
         setGet(true);
     };
 
-    amor();
-  }, []);
+    request();
+  }, [data]);
 
   return(
     <Container>
