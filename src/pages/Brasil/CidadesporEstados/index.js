@@ -34,7 +34,7 @@ export default class CidadesPorEstado extends Component {
     { headers: { 'Authorization': `Token ${token}` }});
 
   const { results } = response.data
-  this.setState( {
+  this.setState({
     estado: [results, ...this.state.estado],
     overflow: true,
     loading: false,
@@ -55,7 +55,7 @@ export default class CidadesPorEstado extends Component {
     } = this.state;
 
     return (
-      <Container first={first} loading={loading}>
+      <Container first={first} loading={loading ? 1 : undefined}>
         <Span>
           <Link
             to="/brasil"
@@ -73,7 +73,7 @@ export default class CidadesPorEstado extends Component {
           { loading ? (
               <FaSpinner size={30} />
           ) : (
-                <ContainerTable overflow={overflow}>
+                <ContainerTable overflow={overflow ? 1 : undefined}>
             { loading ? (
               ''
             ) : (
@@ -84,7 +84,6 @@ export default class CidadesPorEstado extends Component {
                     </tbody>
                   </Table>
               )
-
 
             }
           </ContainerTable>

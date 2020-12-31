@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Head() {
   return (
@@ -22,11 +23,17 @@ export function List({
 }) {
   let letalidade = 0;
   letalidade = (deaths / confirmed) * 100;
+
+  function a(city){
+
+  }
   return (
 
     <tr>
       <td>{state}</td>
-      <td>{city}</td>
+      <td>
+        <Link to={`/cidade/${city}`}>{city}</Link>
+      </td>
       <td>{ Number(estimated_population_2019).toLocaleString()}</td>
       <td>{confirmed.toLocaleString()}</td>
       <td>{deaths.toLocaleString()}</td>
