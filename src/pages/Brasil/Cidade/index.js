@@ -16,18 +16,13 @@ const City = () => {
     const { params } = useRouteMatch();
     const { city } = params;
 
-    useEffect( () =>{
-      async function request(){
 
-        const response = await axios.get(`https://api.brasil.io/v1/dataset/covid19/caso/data/?city=${city}`,
-        { headers: { 'Authorization': `Token ${token}` }});
-
+    axios.get(`https://api.brasil.io/v1/dataset/covid19/caso/data/?city=${city}`,
+      { headers: { 'Authorization': `Token ${token}` }})
+      .then(response => {
         setData([response.data.results[195],response.data.results[180],response.data.results[165],response.data.results[150],response.data.results[135],response.data.results[120],response.data.results[105],response.data.results[90],response.data.results[75],response.data.results[60],response.data.results[45],response.data.results[30],response.data.results[15],response.data.results[0] ])
         setGet(true);
-    };
-
-    request();
-  }, []);
+      });
 
   return(
     <Container>
