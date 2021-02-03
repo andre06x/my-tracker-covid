@@ -1,12 +1,14 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip  } from 'recharts'
 import axios from 'axios';
+import moment from 'moment';
 
 import { Container, Span } from '../../../components/Container/All';
 
 const token = '3bd7b29a7cebed90c2daa903135394ad75f4a9a2';
+
 
 const City = () => {
 
@@ -16,13 +18,26 @@ const City = () => {
     const { params } = useRouteMatch();
     const { city } = params;
 
+  useEffect(() => {
 
-    axios.get(`https://api.brasil.io/v1/dataset/covid19/caso/data/?city=${city}`,
-      { headers: { 'Authorization': `Token ${token}` }})
-      .then(response => {
-        setData([response.data.results[195],response.data.results[180],response.data.results[165],response.data.results[150],response.data.results[135],response.data.results[120],response.data.results[105],response.data.results[90],response.data.results[75],response.data.results[60],response.data.results[45],response.data.results[30],response.data.results[15],response.data.results[0] ])
-        setGet(true);
-      });
+    async function k(){
+      const response = await axios.get(`https://api.brasil.io/v1/dataset/covid19/caso/data/?city=${city}`,
+      { headers: { 'Authorization': `Token ${token}` }});
+
+      let data = [response.data.results[195],response.data.results[180],response.data.results[165],response.data.results[150],response.data.results[135],response.data.results[120],response.data.results[105],response.data.results[90],response.data.results[75],response.data.results[60],response.data.results[45],response.data.results[30],response.data.results[15],response.data.results[0] ];
+
+      data = data.map(c => ({
+        ...c,
+        dateFormated: moment(c.date).format("DD-MM-YYYY")
+      }));
+
+      setData(data);
+      setGet(true);
+    }
+
+    k();
+
+  },[city])
 
   return(
     <Container>
@@ -37,7 +52,7 @@ const City = () => {
           <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
             <Line type="monotone" dataKey="confirmed" stroke="#8884d8" />
             <CartesianGrid stroke="#bbb" />
-            <XAxis dataKey="date" />
+            <XAxis dataKey="dateFormated" />
             <Tooltip/>
             <YAxis />
           </LineChart>
@@ -46,7 +61,7 @@ const City = () => {
           <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
             <Line type="monotone" dataKey="deaths" stroke="#8884d8" />
             <CartesianGrid stroke="#bbb" />
-            <XAxis dataKey="date" />
+            <XAxis dataKey="dateFormated" />
             <Tooltip/>
             <YAxis />
           </LineChart>
